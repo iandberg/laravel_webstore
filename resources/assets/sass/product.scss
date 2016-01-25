@@ -1,0 +1,28 @@
+// =-=-=-=-=-=-=-[ products ]=-=-=-=-=-=-=-
+
+.product_cell {
+
+	text-align: center;
+	
+	a{
+		color: inherit;
+	}
+}
+
+#single_product{
+	.product_image{
+		text-align: center;
+	}
+	
+	#qty_field{
+		width: 20px;
+	}
+	
+	.cart_buttons{
+		a{
+			border-radius: 5px;
+			background-color: #11653c;
+			color: #FFF;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+body{
+	font-family: 'Roboto', sans-serif; 
+}
+
+a{
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+// =-=-=-=-=-=-=-[ header ]=-=-=-=-=-=-=-
+
+#main_header{
+	background: url('/images/background.jpg');
+	
+	a{
+		color: inherit;
+	}
+}
+
