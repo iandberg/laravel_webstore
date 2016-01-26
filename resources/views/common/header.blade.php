@@ -16,5 +16,6 @@
 <div class="container">
 	<div id="main_header" class="jumbotron">
 		<a href="/"><h1>Laravel Webstore</h1></a> 
+		<p>A simple webstore app made with Laravel</p>
 	</div>
 </div>

@@ -37,4 +37,9 @@ Route::group(['middleware' => ['web']], function () {
 // =-=-=-=-=-=-=-[ cart items ]=-=-=-=-=-=-=-	
 
 	Route::post('/cartitem/{id}/new', 'CartItemsController@new');
+	
+// =-=-=-=-=-=-=-[ cart ]=-=-=-=-=-=-=-
+	
+	Route::get('/carts/new', 'CartItemsController@seesess');
+
 });

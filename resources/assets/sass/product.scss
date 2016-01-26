@@ -2,10 +2,28 @@
 
 .product_cell {
 
+	height: 266px;
+	margin-bottom: 26px;
 	text-align: center;
 	
 	a{
 		color: inherit;
+	}
+	
+	&:nth-child(4n + 1){
+		clear: left;
+	}
+	
+	.product_image{
+
+		height: 209px;
+
+		img{
+// 			position: relative;
+// 			top: 50%;
+// 			left: 0;
+// 			transform: translateY(-50%);		
+		}
 	}
 }
 

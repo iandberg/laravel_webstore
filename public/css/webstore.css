@@ -5756,15 +5756,24 @@ body {
 a:hover {
   text-decoration: none; }
 
+img {
+  max-width: 100%; }
+
 #main_header {
   background: url("/images/background.jpg"); }
   #main_header a {
     color: inherit; }
 
 .product_cell {
+  height: 266px;
+  margin-bottom: 26px;
   text-align: center; }
   .product_cell a {
     color: inherit; }
+  .product_cell:nth-child(4n + 1) {
+    clear: left; }
+  .product_cell .product_image {
+    height: 209px; }
 
 #single_product .product_image {
   text-align: center; }
