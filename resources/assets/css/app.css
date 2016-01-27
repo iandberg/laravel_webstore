@@ -5760,7 +5760,8 @@ img {
   max-width: 100%; }
 
 #main_header {
-  background: url("/images/background.jpg"); }
+  background: url("/images/background.jpg");
+  background-size: cover; }
   #main_header a {
     color: inherit; }
 
@@ -5785,5 +5786,20 @@ img {
   border-radius: 5px;
   background-color: #11653c;
   color: #FFF; }
+
+.cartitems {
+  margin-bottom: 100px; }
+  .cartitems .cart_image img {
+    height: 100px; }
+  .cartitems .cart_header {
+    border-bottom: 1px solid;
+    margin-bottom: 30px; }
+  .cartitems .cartitem {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0; }
+    .cartitems .cartitem .delete_button {
+      cursor: pointer; }
+  .cartitems .cart_text {
+    font-size: 17px; }
 
 /*# sourceMappingURL=app.css.map */

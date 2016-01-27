@@ -37,9 +37,11 @@ Route::group(['middleware' => ['web']], function () {
 // =-=-=-=-=-=-=-[ cart items ]=-=-=-=-=-=-=-	
 
 	Route::post('/cartitem/{id}/new', 'CartItemsController@new');
+	Route::post('/cartitem/delete', 'CartItemsController@delete');
 	
 // =-=-=-=-=-=-=-[ cart ]=-=-=-=-=-=-=-
 	
-	Route::get('/carts/new', 'CartItemsController@seesess');
+	Route::get('/cart', 'CartsController@index');
+	Route::get('/cart/new', 'CartItemsController@seesess');
 
 });

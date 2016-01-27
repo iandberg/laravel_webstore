@@ -1,0 +1,27 @@
+// =-=-=-=-=-=-=-[ cart ]=-=-=-=-=-=-=-
+
+.cartitems{
+	margin-bottom: 100px;
+	
+	.cart_image img{
+		height: 100px;
+	}
+
+	.cart_header{
+		border-bottom: 1px solid;
+		margin-bottom: 30px;	
+	}
+	
+	.cartitem{
+		border-bottom: 1px solid #eee;
+		padding: 15px 0;
+		
+		.delete_button{
+			cursor: pointer;
+		}
+	}
+	
+	.cart_text{
+		font-size: 17px;
+	}
+}

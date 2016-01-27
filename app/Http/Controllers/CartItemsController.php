@@ -17,7 +17,7 @@ class CartItemsController extends Controller
 	
 	public function new($product_id, Request $request)
 	{
-		//outsource to new func?
+		// get or create cart
 		if(!Session::get('cart_id')){
 			$cart = CartsController::new(); 
 			$cart_id = $cart->id;
@@ -26,7 +26,8 @@ class CartItemsController extends Controller
 			$cart_id = Session::get('cart_id');
 		}
 		
-		$product = Product::whereId($product_id)->firstOrFail(); //to get product price from db
+		//get product data for cart item
+		$product = Product::whereId($product_id)->firstOrFail(); 
 		
 		$cartitem = new CartItem([
 			'cart_id'		=> $cart_id,
@@ -38,8 +39,21 @@ class CartItemsController extends Controller
 		
 		$cartitem->save();
 		
-		return redirect('/')->with('status', $product->title . 'added to cart!');
+		$request->session()->flash('status','Item added to cart!');
+		
+		return redirect('/');
 	}
+	
+	public function delete(Request $request)
+	
+// 	public function delete($cart_id, $cartitem_id, Request $request)
+	{
+// 		$cartitem = CartItem::where('id', $cartitem_id)->where('cart_id', $cart_id);
+// 		$cartitem->delete();
+		
+		return $request;
+	}
+	
 	
 	public function seesess()
 	{

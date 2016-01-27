@@ -21,7 +21,7 @@
 			<form method="post" action="/cartitem/{{ $product->id }}/new">
 				{!! csrf_field() !!}
 				<label for="qty">Quantity</label>
-				<input id="qty_field" type="text" name="qty">
+				<input id="qty_field" type="text" name="qty" value="1">
 				<input type="submit" value="Add to cart">
 			</form>
 

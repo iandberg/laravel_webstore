@@ -8,19 +8,10 @@
 		<link rel="stylesheet" href="/css/webstore.css" type="text/css">		
 	</head>
 	<body>
-<div style="dsplay: none">
-<?php
-session_start();
-echo "<pre>";
-print_r($_SESSION);
-echo "</pre>";
-?>
-</div>
 	
 		@include('common.header')
 		
 		<div id="main_content" class="container">
-			
 			
 			@yield('content')
 			

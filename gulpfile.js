@@ -15,7 +15,7 @@ elixir(function(mix) {
     mix.sass([
     	'app.scss', //includes bootstrap here
     	'product.scss',
-    	//add more scss if needed
+		'cart.scss',
 	],'resources/assets/css'); //destination
 
 	mix.styles([ //consolidate css

@@ -3,6 +3,7 @@
 		<div class="navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/">Home</a></li>
+				<li><a href="/cart">Cart</a></li>
 				<li><a href="#">Login</a></li>
 				<li><a href="#">Register</a></li>
 			</ul>
